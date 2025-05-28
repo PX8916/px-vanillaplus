@@ -1,7 +1,7 @@
 height 32;
 monospacefonts true, "0";
 
-statusbar fullscreen // readjust this at some point
+statusbar fullscreen // im not gonna readjust all of this due to the commented out id24 stuff
 {
 	drawimage "STTPRCNT", 90, 171;
 	drawimage "STTPRCNT", 221, 171;
@@ -13,12 +13,21 @@ statusbar fullscreen // readjust this at some point
 	drawswitchableimage keyslot 2 && 5, "nullimage", "STKEYS0", "STKEYS3", "STKEYS6", 239, 171;
 	drawswitchableimage keyslot 3 && 6, "nullimage", "STKEYS1", "STKEYS4", "STKEYS7", 239, 181;
 	drawswitchableimage keyslot 1 && 4, "nullimage", "STKEYS2", "STKEYS5", "STKEYS8", 239, 191;
-	IfCVarInt px8vanilla_id24stbar, 1
-	{
-		// TBA
-	}
-	else
-	{
+	//IfCVarInt px8vanilla_id24pxv, 1
+	//{
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Clip), 288, 169;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Shell), 288, 175;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(RocketAmmo), 288, 181;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Cell), 288, 187;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(ID24Fuel), 288, 193;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Clip), 314, 169;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Shell), 314, 175;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(RocketAmmo), 314, 181;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(ID24Fuel), 314, 187;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Cell), 314, 193;
+	//}
+	//else
+	//{
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Clip), 288, 173;
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Shell), 288, 179;
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(RocketAmmo), 288, 185;
@@ -42,26 +51,46 @@ statusbar fullscreen // readjust this at some point
 		{
 			drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Cell), 314, 191;
 		}
-	}
+	//}
 	gamemode deathmatch, teamgame
 	{
 		drawnumber 2, HUDFONT_DOOM, untranslated, frags, 138, 171;
 	}
 	gamemode cooperative, singleplayer
 	{
-		IfCVarInt px8vanilla_id24stbar, 1
-		{
-			drawimage "STARMSAL", 104, 168;
-		}
-		else IfCVarInt px8vanilla_wsstbar, 1
-		{
-			drawimage "STARMSAL", 104, 168;
-		}
-		else
-		{
-			drawimage "STARMS", 104, 168;
-		}
-		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172; 
+		//IfCVarInt px8vanilla_lorcompat, 1
+		//{
+		//	IfCVarInt px8vanilla_id24pxv, 1
+		//	{
+		//		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+		//		drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+		//		drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+		//		drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+		//		drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+		//		drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+		//		drawswitchableimage weaponslot 8, "STGNUM8", "STYSNUM8", 117, 192;
+		//		drawswitchableimage weaponslot 9, "STGNUM8", "STYSNUM9", 129, 192;
+		//	}
+		//	else
+		//	{
+		//		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+		//		drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+		//		drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+		//		drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+		//		drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+		//		drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+		//	}
+		//}
+		//else
+		//{
+		//	drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+		//	drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+		//	drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+		//	drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+		//	drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+		//	drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+		//}
+		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
 		drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
 		drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
 		drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
@@ -72,14 +101,14 @@ statusbar fullscreen // readjust this at some point
 
 statusbar normal // Standard Doom Status bar
 {
-	IfCVarInt px8vanilla_id24stbar, 1
-	{
-		// TBA
-	}
-	else IfCVarInt px8vanilla_lorcompat, 1
+	IfCVarInt px8vanilla_lorcompat, 1
 	{
 		drawimage "STBAR24", 0, 168;
 	}
+	//else IfCVarInt px8vanilla_id24pxv, 1
+	//{
+	//	drawimage "STBAR24", 0, 168;
+	//}
 	else IfCVarInt px8vanilla_wsstbar, 1
 	{
 		drawimage "STBARVA", 0, 168;
@@ -98,12 +127,22 @@ statusbar normal // Standard Doom Status bar
 	drawswitchableimage keyslot 2 && 5, "nullimage", "STKEYS0", "STKEYS3", "STKEYS6", 239, 171;
 	drawswitchableimage keyslot 3 && 6, "nullimage", "STKEYS1", "STKEYS4", "STKEYS7", 239, 181;
 	drawswitchableimage keyslot 1 && 4, "nullimage", "STKEYS2", "STKEYS5", "STKEYS8", 239, 191;
-	IfCVarInt px8vanilla_id24stbar, 1
-	{
-		// TBA
-	}
-	else
-	{
+	//IfCVarInt px8vanilla_id24pxv, 1
+	//{
+	//	drawimage "STAMMO24", 249, 168;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Clip), 288, 169;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Shell), 288, 175;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(RocketAmmo), 288, 181;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Cell), 288, 187;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(ID24Fuel), 288, 193;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Clip), 314, 169;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Shell), 314, 175;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(RocketAmmo), 314, 181;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(ID24Fuel), 314, 187;
+	//	drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Cell), 314, 193;
+	//}
+	//else
+	//{
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Clip), 288, 173;
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(Shell), 288, 179;
 		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(RocketAmmo), 288, 185;
@@ -127,26 +166,49 @@ statusbar normal // Standard Doom Status bar
 		{
 			drawnumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Cell), 314, 191;
 		}
-	}
+	//}
 	gamemode deathmatch, teamgame
 	{
 		drawnumber 2, HUDFONT_DOOM, untranslated, frags, 138, 171;
 	}
 	gamemode cooperative, singleplayer
 	{
-		IfCVarInt px8vanilla_id24stbar, 1
+		IfCVarInt px8vanilla_lorcompat, 1
 		{
-			drawimage "STARMSAL", 104, 168;
-		}
-		else IfCVarInt px8vanilla_wsstbar, 1
-		{
-			drawimage "STARMSAL", 104, 168;
+			//IfCVarInt px8vanilla_id24pxv, 1
+			//{
+			//	drawimage "STARMS24", 104, 168;
+			//	drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+			//	drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+			//	drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+			//	drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+			//	drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+			//	drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+			//	drawswitchableimage weaponslot 8, "STGNUM8", "STYSNUM8", 117, 192;
+			//	drawswitchableimage weaponslot 9, "STGNUM8", "STYSNUM9", 129, 192;
+			//}
+			//else
+			//{
+				drawimage "STARMSAL", 104, 168;
+			//	drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+			//	drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+			//	drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+			//	drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+			//	drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+			//	drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+			//}
 		}
 		else
 		{
 			drawimage "STARMS", 104, 168;
+		//	drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
+		//	drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+		//	drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+		//	drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+		//	drawswitchableimage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+		//	drawswitchableimage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
 		}
-		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172; 
+		drawswitchableimage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172;
 		drawswitchableimage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
 		drawswitchableimage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
 		drawswitchableimage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;

@@ -1,5 +1,5 @@
 GameInfo
 {
 	PlayerClasses = "DoomPlayerPXV"
-	AddEventHandlers = "PXV_LOR21PickupHandler"
+	AddEventHandlers = "PXV_LORMBF21Handler"
 }

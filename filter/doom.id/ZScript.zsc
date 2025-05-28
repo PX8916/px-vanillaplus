@@ -12,8 +12,6 @@ class DoomPlayerPXV : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 3, "ShotgunPXV", "SuperShotgunPXV";
 		Player.WeaponSlot 4, "ChaingunPXV";
 		Player.WeaponSlot 5, "RocketLauncherPXV";
-		//Player.WeaponSlot 6, "PlasmaRiflePXV";
-		//Player.WeaponSlot 7, "BFG9000PXV";
 		Player.WeaponSlot 6, "ID24IncineratorPXV", "PlasmaRiflePXV";
 		Player.WeaponSlot 7, "ID24CalamityBladePXV", "BFG9000PXV";
 	}
@@ -689,7 +687,7 @@ class ID24CalamityBladePXV : ID24CalamityBlade replaces ID24CalamityBlade
 	}
 }
 
-class PXV_LOR21PickupHandler : EventHandler // yoinked marty's eventhandler, mb
+class PXV_LORMBF21Handler : EventHandler // yoinked marty's eventhandler, mb
 {
 	override void CheckReplacement(ReplaceEvent e)
 	{
