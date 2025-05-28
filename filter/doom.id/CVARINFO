@@ -1,0 +1,5 @@
+server bool px8vanilla_firecasings = false;
+server bool px8vanilla_chaingunsfx = false;
+server bool px8vanilla_wsstbar = false;
+server bool px8vanilla_id24stbar = false;
+server bool px8vanilla_lorcompat = false;

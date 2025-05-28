@@ -1,0 +1,7 @@
+[enu default]
+PX8VANILLA_OPTIONS = "PX's Vanilla+ Options";
+PX8VANILLA_FIRECASINGS = "Weapon Casings";
+PX8VANILLA_CHAINGUNSFX = "Alternative Chaingun Sounds";
+PX8VANILLA_WSSTBAR = "Widescreen Vanilla Statusbar";
+PX8VANILLA_ID24STBAR = "ID24 Statusbar";
+PX8VANILLA_LORCOMPAT = "Legacy of Rust compatibility";

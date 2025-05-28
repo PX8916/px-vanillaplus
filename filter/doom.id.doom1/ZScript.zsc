@@ -1,0 +1,19 @@
+version "4.13.0"
+
+class DoomPlayerPXVD1 : DoomPlayer replaces DoomPlayer
+{
+	Default
+	{
+		Player.StartItem "PistolPXV";
+		Player.StartItem "FistPXV";
+		Player.StartItem "Clip", 50;
+		Player.WeaponSlot 1, "FistPXV", "ChainsawPXV";
+		Player.WeaponSlot 2, "PistolPXV";
+		Player.WeaponSlot 3, "ShotgunPXV";
+		Player.WeaponSlot 4, "ChaingunPXV";
+		Player.WeaponSlot 5, "RocketLauncherPXV";
+		Player.WeaponSlot 6, "PlasmaRiflePXV";
+		Player.WeaponSlot 7, "BFG9000PXV";
+	}
+}
+	

@@ -1,0 +1,14 @@
+AddOptionMenu OptionsMenu
+{
+	SubMenu "$PX8VANILLA_OPTIONS", PX8VanillaOptions
+}
+
+OptionMenu PX8VanillaOptions
+{
+	Title "$PX8VANILLA_OPTIONS"
+	Option "$PX8VANILLA_FIRECASINGS", px8vanilla_firecasings, OnOff
+	Option "$PX8VANILLA_CHAINGUNSFX", px8vanilla_chaingunsfx, OnOff
+	Option "$PX8VANILLA_WSSTBAR", px8vanilla_wsstbar, OnOff
+	//Option "$PX8VANILLA_ID24STBAR", px8vanilla_id24stbar, OnOff
+	Option "$PX8VANILLA_LORCOMPAT", px8vanilla_lorcompat, OnOff
+}
