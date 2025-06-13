@@ -1,0 +1,6 @@
+[enu default]
+
+GOTCLIP = "Picked up a mag.";
+GOTMEDINEED = "Picked up a medikit that you REALLY needed!";
+GOTPLASMA = "You got the plasma rifle!";
+OB_MPPLASMARIFLE = "%o was melted by %k's plasma rifle.";
