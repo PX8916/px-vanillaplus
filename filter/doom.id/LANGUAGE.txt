@@ -5,3 +5,4 @@ PX8VANILLA_CHAINGUNSFX = "Alternative Chaingun Sounds";
 PX8VANILLA_WSSTBAR = "Widescreen Vanilla Statusbar";
 //PX8VANILLA_ID24PXV = "ID24 Spec Implementation";
 PX8VANILLA_LORCOMPAT = "Legacy of Rust Support";
+PX8VANILLA_PXVMONSTERS = "px-vanillaplus Monster Edits";

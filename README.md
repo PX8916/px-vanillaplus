@@ -2,7 +2,7 @@
 
 - My own take on Vanilla for GZDoom.
 - Recommended for those who use compatibility settings and/or playing vanilla WADs that do not modify any actors via Dehacked.
-- Has a few more extra features such as weapon casings, colored vanilla blood, ID24 and Legacy of Rust support (work in progress)
+- Has a few more extra features such as weapon casings, colored vanilla blood, chaingun alternative sounds, ID24 and Legacy of Rust support (work in progress), and more.
 
 - Assets by id Software, Nightdive Studios, Bethesda
 

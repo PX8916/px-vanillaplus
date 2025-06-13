@@ -10,4 +10,5 @@ OptionMenu PX8VanillaOptions
 	Option "$PX8VANILLA_CHAINGUNSFX", px8vanilla_chaingunsfx, OnOff
 	Option "$PX8VANILLA_WSSTBAR", px8vanilla_wsstbar, OnOff
 	Option "$PX8VANILLA_LORCOMPAT", px8vanilla_lorcompat, OnOff
+	Option "$PX8VANILLA_PXVMONSTERS", px8vanilla_pxvmonsters, OnOff
 }

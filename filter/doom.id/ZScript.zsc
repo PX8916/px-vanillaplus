@@ -719,7 +719,36 @@ class PXV_LORMBF21Handler : EventHandler // yoinked marty's eventhandler, mb
 	}
 }
 
-class LostSoulPXV : LostSoul replaces LostSoul
+class PXV_EnemyActorHandler : EventHandler
+{
+	override void CheckReplacement(ReplaceEvent e)
+	{
+		if (!CVar.GetCvar("px8vanilla_pxvmonsters").GetBool()) return;
+		if (e.Replacee == "LostSoul")
+		{
+			e.Replacement = "LostSoulPXV";
+		}
+		if (e.Replacee == "Spectre")
+		{
+			e.Replacement = "SpectrePXV";
+		}
+		if (e.Replacee == "Cacodemon")
+		{
+			e.Replacement = "CacodemonPXV";
+		}
+		if (e.Replacee == "BaronOfHell")
+		{
+			e.Replacement = "BaronOfHellPXV";
+		}
+		if (e.Replacee == "HellKnight")
+		{
+			e.Replacement = "HellKnightPXV";
+		}
+		return;
+	}
+}
+
+class LostSoulPXV : LostSoul
 {
 	Default
 	{
@@ -727,7 +756,7 @@ class LostSoulPXV : LostSoul replaces LostSoul
 	}
 }
 
-class SpectrePXV : Spectre replaces Spectre
+class SpectrePXV : Spectre
 {
 	Default
 	{
@@ -735,7 +764,7 @@ class SpectrePXV : Spectre replaces Spectre
 	}
 }
 
-class CacodemonPXV : Cacodemon replaces Cacodemon
+class CacodemonPXV : Cacodemon
 {
 	Default
 	{
@@ -743,7 +772,7 @@ class CacodemonPXV : Cacodemon replaces Cacodemon
 	}
 }
 
-class BaronOfHellPXV : BaronOfHell replaces BaronOfHell
+class BaronOfHellPXV : BaronOfHell
 {
 	Default
 	{
@@ -751,7 +780,7 @@ class BaronOfHellPXV : BaronOfHell replaces BaronOfHell
 	}
 }
 
-class HellKnightPXV : HellKnight replaces HellKnight
+class HellKnightPXV : HellKnight
 {
 	Default
 	{

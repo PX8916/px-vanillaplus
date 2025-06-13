@@ -1,5 +1,5 @@
 GameInfo
 {
 	PlayerClasses = "DoomPlayerPXV"
-	AddEventHandlers = "PXV_LORMBF21Handler"
+	AddEventHandlers = "PXV_LORMBF21Handler", "PXV_EnemyActorHandler"
 }

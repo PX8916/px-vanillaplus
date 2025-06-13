@@ -3,3 +3,4 @@ server bool px8vanilla_chaingunsfx = false;
 server bool px8vanilla_wsstbar = false;
 //server bool px8vanilla_id24pxv = false;
 server bool px8vanilla_lorcompat = false;
+server bool px8vanilla_pxvmonsters = true;
